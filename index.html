@@ -1,172 +1,171 @@
 <!DOCTYPE html>
-<html>
+<head>
+    <meta lang="en">
+    <meta charset="UTF-8">
+    <title>My portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Skranji|Source+Sans+Pro" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </a>
+               <a href="#" class="brand">Landy</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Screenshots</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Download</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="active item">
+                    <img src="img/main_logo.jpg" alt="Main banner 1">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Free Download</h1>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nostrum et repellat, repellendus totam, illo sed saepe eum vel cupiditate eveniet tempore. Iste sit animi ratione dolore maxime vel quidem?</p>
+                            <a href="#" class="btn-large btn-info pull-right">Download now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/main_logo_2.jpg" alt="Main banner 2">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Free Download</h1>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nostrum et repellat, repellendus totam, illo sed saepe eum vel cupiditate eveniet tempore. Iste sit animi ratione dolore maxime vel quidem?</p>
+                            <a href="#" class="btn-large btn-info pull-right">Download now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <a href="#myCarousel" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+    <a href="#myCarousel" class="carousel-control right" data-slide="next">&rsaquo;</a>
+    </div>
+    
+    <div class="container">
+        <div id="about">
+            <div id="heading">
+                <h1>A great free landing page tamplate</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio omnis ullam laudantium sunt, architecto iure itaque deserunt id! Totam suscipit quo molestias, nisi optio quas nemo eaque ea? Repudiandae, eius.</p>
+            </div>
+        </div>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>НАЧАЛО РАБОТЫ С BRACKETS</title>
-        <meta name="description" content="Интерактивное руководство по началу работы в Brackets.">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
+        <div class="divider"></div>
 
-		<h1>НАЧАЛО РАБОТЫ С BRACKETS</h1>
-		<h2>Ваше личное руководство!</h2>
-		
-		<!--
-			СДЕЛАНО С <3 И JAVASCRIPT
-		-->
-		
-		
-		<p>
-			Добро пожаловать в раннюю версию Brackets, нового редактора с открытым исходным
-			кодом для веба следующего поколения. Мы большие фанаты стандартов и хотим построить лучший
-			инструмент для JavaScript, HTML и CSS и связанных с ними открытых веб-технологий. Это наше
-			скромное начало.
-		</p>
-		
-		<!--
-			ЧТО ТАКОЕ BRACKETS?
-		-->
-		<p>
-			<em>Во многих отношениях, Brackets необычный редактор.</em>
-			Одна примечательная особенность в том, что этот редактор написан на JavaScript,
-			HTML and CSS. Это означает, что большинство пользователей Brackets имеют навыки
-			необходимые для доработки и расширения редактора. На самом деле, мы используем Brackets
-			каждый день для того, чтобы улучшать Brackets. Он так же имеет несколько особенностей
-			вроде Быстрого Редактирования, Интерактивного Просмотра и других, которые вы не сможете
-			найти в других редакторах.
-			Читайте далее для того чтобы узнать, как использовать эти особенности редактора.
-		</p>
-		
-		
-		<h2>Мы испытываем несколько новых штук</h2>
-		
-		<!--
-			ОТНОШЕНИЯ МЕЖДУ HTML, CSS И JAVASCRIPT
-		-->
-		<h3>Быстрое редактирование CSS и JavaScript</h3>
-		<p>
-			Теперь никакого переключения между документами и потери контекста. Во время редактирования HTML
-			используйте сочетание клавиш <kbd>Cmd/Ctrl + E</kbd> для открытия быстрого редактора, который показывает
-			все связанное с этой строкой CSS. Сделайте изменение CSS-стилей, нажмите <kbd>ESC</kbd> и вернитесь обратно
-			к редактированию HTML. Или просто оставьте блок с CSS-правилами открытым, и они станут частью вашего
-			HTML-редактора. Если вы нажмете <kbd>ESC</kbd> вне быстрого редактора, все CSS-правила закроются.
-		</p>
-		
-		<samp>
-			Хотите увидеть это в действии? Поставьте курсор на теге <!-- <samp> --> выше и нажмите
-			<kbd>Cmd/Ctrl + E</kbd>. Вы должны увидеть, как выше появится быстрый редактор CSS. Справа вы
-			увидите список CSS-правил, которые относятся к этому тегу. Просто прокрутите правила вниз, используя
-			<kbd>Alt + Up/Down</kbd>, чтобы найти то, которое вы хотите отредактировать.
-		</samp>
-		
-		<a href="screenshots/quick-edit.png">
-			<img alt="A screenshot showing CSS Quick Edit" src="screenshots/quick-edit.png" />
-		</a>
-		
-		<p>
-			Вы так же можете использовать эти горячие клавиши при работе с кодом JavaScript,
-			для того, чтобы увидеть содержание функции, просто наведите курсор на её название.
-			На данный момент внутри встроенного редактора нельзя открыть еще один, поэтому вы можете
-			использовать только Быстрое Редактирование, когда курсор находится в "полноэкранном" редакторе.
-		</p>
-		
-		<!--
-			ИНТЕРАКТИВНЫЙ ПРОСМОТР
-		-->
-		<h3>Просматривайте изменения CSS вживую в браузере!</h3>
-		<p>
-			Вы знаете эти пляски с "сохранить/перезагрузить", которые мы делаем годами? Когда вы делаете
-			изменения в вашем редакторе, нажимаете сохранить, переключаетесь в браузер и затем нажимаете
-			перезагрузить, чтобы наконец увидеть результат? Вместе с Brackets этого больше не придется делать.
-		</p>
-		<p>
-			Brackets откроет <em>прямое соединение</em> с вашим локальным браузером и направит ваши изменения CSS, как
-			только вы их напечатаете! Вы, возможно, уже делали что-то подобное с инструментами, встроенными в браузер,
-			но с Brackets больше нет нужды копировать и вставлять финальный CSS обратно в редактор.
-			Ваш код запускается в браузере, но живет в вашем редакторе!
-		</p>
-		<h3>Подсвечивание HTML-элементов и CSS-правил в реальном времени</h3>
-		<p>
-		   С Brackets стало проще понять, как изменения в HTML и CSS отразятся на странице. Когда ваш курсор находится на
-		   CSS-правиле, Brackets подсветит все затронутые элементы в браузере. То же самое и с редактированием HTML-файла,
-		   Brackets будет подсвечивать соответсвующие HTML-элементы в браузере.
-		</p>
-		<samp>
-			Если у вас есть установленный Google Chrome, вы можете попробовать это сами. Нажмите на иконку
-			молнии в правом верхнем углу или нажмите <kbd>Cmd/Ctrl + Alt + P</kbd>. Когда Интерактивный Просмотр
-			включен в HTML-документе, все подключенные CSS-документы могут редактироваться в реальном
-			времени. Иконка изменится с серой на золотую, когда Brackets установит соединение с вашим браузером.
-			
-			Теперь, поставьте курсор на теге <!-- <img> --> выше и используйте <kbd>Cmd/Ctrl + E</kbd>, чтобы
-			открыть записанные CSS-правила. Попробуйте изменить размер границы с 10 пикселя до 20 или изменить
-			цвет фона с "transparent" на "hotpink". Если Brackets и ваш браузер работают вместе, вы увидите, как ваши
-			изменения мгновенно отразятся в вашем браузере. Круто, правда?
-		</samp>
-				
-		<p class="note">
-			Сегодня, Brackets поддерживает Интерактивный Просмотр только для CSS. Сейчас мы работаем над поддержкой
-			Интерактивного Просмотра для HTML и JavaScript. В текущей версии вы не увидите изменений в вашем HTML-
-			или JavaScript-файле до тех пор, пока не сохраните документ. Интерактивный Просмотр работает только с
-			Google Chrome. Но в будушем мы планируем добавить эту возможность для всех основных браузеров.
-		</p>
-		<h3>Быстрый просмотр</h3>
-		<p>
-			Для тех из нас, кто до сих пор не запомнил значения цветов для HEX или RGB, Brackets позволяет быстро и просто
-			посмотреть напрямую, какой цвет используется. В любом CSS- или HTML-файле, просто наведите курсор на значение
-			цвета или градиента и Brackets автоматически отобразит этот цвет/градиент. То же самое и с изображениями:
-			просто наведите курсор на ссылку с изображением в редакторе и Brackets выведет миниатюру этого изображения.
-		</p>
-				
-		<samp>
-			  Попробуйте быстрый просмотр сами, поместите курсор на тэг <!-- <body> --> вверху этого документа и нажмите
-			  <kbd>Cmd/Ctrl + E</kbd> для того, чтобы открыть быстрый редактор CSS. Сейчас просто наведите курсор на любое
-			  значение цвета в CSS. Вы так же можете увидеть это в действии с градиентом, открыв быстрый редактор CSS на
-			  тэге <!-- <html> --> и наведя курсор на любое значение фонового рисунка. Попробуйте быстрый просмотр изображений,
-			  поместите ваш курсор на любой скриншот в этом документе.
-		</samp>
-		
-		<!--
-			РАССКАЖИТЕ, ЧТО ВЫ ДУМАЕТЕ
-		-->
-		<h2>Принимайте участие</h2>
-		<p>
-			Brackets &mdash; проект с открытым исходным кодом. Веб-разработчики со всех уголков мира способствуют
-			созданию лучшего редактора кода. Многие разрабатывают дополнения, которые расширяют возможности
-			Brackets. Расскажите нам, что вы думаете, поделитесь идеями или непосредственно поддержите проект.
-		</p>
-		<ul>
-			<li><a href="http://brackets.io">Brackets.io</a></li>
-			<li><a href="http://blog.brackets.io">Блог команды Brackets</a></li>
-			<li><a href="http://github.com/adobe/brackets">Brackets на GitHub</a></li>
-			<li><a href="http://github.com/adobe/brackets/wiki">Brackets Wiki</a></li>
-			<li><a href="http://groups.google.com/group/brackets-dev">Почтовая рассылка разработчиков Brackets</a></li>
-			<li><a href="https://twitter.com/#!/brackets">@Brackets в Twitter</a></li>
-			<li>Общайтесь с разработчиками Brackets в IRC в #brackets на Freenode</li>
-		</ul>
+        <div class="row">
+            <div class="span4">
+                <img src="img/logo_7.jpg" alt="" class="img-polaroid">
+            </div>
+            <div class="span8">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quos eius magnam, autem, natus praesentium, excepturi ab blanditiis similique atque quasi quod? Alias error cupiditate quam, corporis modi, aspernatur adipisci.</p>
+                <p class="lead">Quibusdam labore, rem nostrum, eaque non dicta magnam voluptatibus ipsa perferendis. Magni nam aspernatur consequuntur quasi, eaque illum suscipit nisi dolor. Possimus provident, ipsum expedita dolor, placeat aliquam aut nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span8">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quos eius magnam, autem, natus praesentium, excepturi ab blanditiis similique atque quasi quod? Alias error cupiditate quam, corporis modi, aspernatur adipisci.</p>
+                <p class="lead">Quibusdam labore, rem nostrum, eaque non dicta magnam voluptatibus ipsa perferendis. Magni nam aspernatur consequuntur quasi, eaque illum suscipit nisi dolor. Possimus provident, ipsum expedita dolor, placeat aliquam aut nulla.</p>
+            </div>
+            <div class="span4">
+                <img src="img/logo_7.jpg" alt="" class="img-polaroid">
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div id="screenshots" class="row">
+            <h1>Check some great screenshots</h1>
+            <div class="span2"><img src="img/logo_1.jpg" alt="" class="img-polaroid"></div>
+            <div class="span2"><img src="img/logo_2.jpg" alt="" class="img-polaroid"></div>
+            <div class="span2"><img src="img/logo_3.jpg" alt="" class="img-polaroid"></div>
+            <div class="span2"><img src="img/logo_4.jpg" alt="" class="img-polaroid"></div>
+            <div class="span2"><img src="img/logo_5.jpg" alt="" class="img-polaroid"></div>
+            <div class="span2"><img src="img/logo_6.jpg" alt="" class="img-polaroid"></div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="row" id="features">
+            <div class="span4">
+            <img src="img/gear-icon.png" alt="">
+            <h3>Feature 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus suscipit dignissimos ullam, ratione nesciunt ipsam, facilis ipsum quam alias fugit. Deserunt corrupti, molestiae hic quos ab quod perspiciatis, adipisci odit.</p>
+            </div>
+            
+            <div class="span4"><img src="img/monitoring-icon.png" alt="">
+            <h3>Feature 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus suscipit dignissimos ullam, ratione nesciunt ipsam, facilis ipsum quam alias fugit. Deserunt corrupti, molestiae hic quos ab quod perspiciatis, adipisci odit.</p>
+            </div>
+            
+            <div class="span4"><img src="img/multi-files-icon.png" alt="">
+            <h3>Feature 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus suscipit dignissimos ullam, ratione nesciunt ipsam, facilis ipsum quam alias fugit. Deserunt corrupti, molestiae hic quos ab quod perspiciatis, adipisci odit.</p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div id="download" class="row">
+            <ul class="inline">
+                <li><a href="#" class="btn btn-large btn-success">Try it FREE</a></li>
+                <li><a href="#" class="btn btn-large btn-info">Buy it now</a></li>
+            </ul>
+        </div>
+        
+    </div>
 
-    </body>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <h3>About App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos in, exercitationem adipisci quibusdam ab eaque, suscipit quae quaerat omnis dignissimos ullam necessitatibus at provident unde harum consequatur consequuntur ipsum fugit!</p>
+                </div>
+                <div class="span6">
+                    <h3>Get Informed</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusamus assumenda doloribus molestias suscipit dolorum ea inventore et quaerat odit adipisci facilis laboriosam dolore laudantium similique expedita, itaque libero sint.</p>
+                    <form action="" class="form-inline">
+                        <input type="text" class="input-large" placeholder="Email">
+                        <button type="submit" class="btn btn-info">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <p><small>Copyright 2018, Company Name</small></p>
+                    <ul id="social" class="inline">
+                        <li><a href="#" class="facebook-icon"></a></li>
+                        <li><a href="#" class="twitter-icon"></a></li>
+                        <li><a href="#" class="google-icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+</body>
 </html>
-<!--
-
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[     CODE THE WEB     ]:::::]
-    [:::::[  http://brackets.io  ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-
--->
